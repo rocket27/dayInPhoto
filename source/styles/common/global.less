@@ -2,13 +2,12 @@
 	box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
+html {
+	font-size: @rootFontSize;
 }
 
 body {
 	font-family: notoSansRegular, Arial, Helvetica, sans-serif;
-	font-size: 13px;
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
 }
@@ -35,4 +34,8 @@ a:link, a:visited, a:hover, a:active {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+b, strong {
+	font-weight: normal;
 }

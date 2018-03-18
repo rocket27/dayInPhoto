@@ -1,8 +1,40 @@
 extends ../template
 
 block variables
-  - var title = ''
+  - var title = 'День в фото'
 
 block content
-  .wrapper
-    h1 День в фото
+  .container
+    header.header
+      h1.header__title День в фото
+      span.header__underline
+    main.content
+      section.dayPicture
+        .dayPicture__frame
+          img.dayPicture__image(src="../../img/content/dayPicture.jpg")
+        .dayPicture__description
+          p.dayPicture__about
+            | Мельницы маленькой деревушки Brandmill близи курортного австрийского города Mayerhoffen
+          p.dayPicture__autor
+            | Фото: Reuters
+        .dayPicture__date
+          time.dayPicture__time(datetime="2017-09-21")
+            span 21
+            br
+            | сентября
+      include ../common/smallList
+      include ../common/mediumList
+      include ../common/largeList
+    footer.footer
+      nav.pageNav
+        span.pageNav__text Страницы:
+        ul.pageNav__list
+          li.pageNav__listItem.pageNav__listItem_active
+            a.pageNav__link(href="#") 1
+          li.pageNav__listItem
+            a.pageNav__link(href="#") 2
+          li.pageNav__listItem
+            a.pageNav__link(href="#") 3
+          li.pageNav__listItem
+            a.pageNav__link(href="#") 4
+        a.pageNav__button(href="#") Следующая

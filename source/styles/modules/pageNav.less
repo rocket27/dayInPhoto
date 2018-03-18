@@ -1,0 +1,24 @@
+.pageNav {
+  display: flex;
+  align-items: baseline;
+  &__list {
+    display: flex;
+    margin-right: 25px;
+  }
+  &__listItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    &_active {
+      background-color: #e6e6e6;
+      font-family: notoSansBold;
+    }
+  }
+  &__text {
+    display: none;
+    margin-right: 24px;
+  }
+}

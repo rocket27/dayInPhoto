@@ -1,0 +1,38 @@
+.smallList {
+  font-size: 0;
+  margin: 0 0 4px -6px;
+  &__item {
+    .inlineItem;
+    width: 73px;
+    height: 48px;
+    margin: 0 0 6px 6px;
+    &_date {
+      .itemDate;
+      &:after {
+        .itemDateAfter;
+        top: 14px;
+        right: 4px;
+      }
+    }
+    &_img01 {
+      background: url('../../img/bg/smallSprite.png') 0 0;
+    }
+    &_img02 {
+      background: url('../../img/bg/smallSprite.png') -73px 0;
+    }
+    &_img03 {
+      background: url('../../img/bg/smallSprite.png') 0 -48px;
+    }
+    &_img04 {
+      background: url('../../img/bg/smallSprite.png') -73px -48px;
+    }
+    &_teaser {
+      width: 100%;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+  }
+  &__photo {
+    display: block;
+  }
+}

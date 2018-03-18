@@ -3,7 +3,7 @@ include helpers/mixins
 block variables
 
 doctype html
-html(lang="en")
+html(lang="ru")
   head
     meta(charset="utf-8")
     title #{title}
@@ -28,4 +28,5 @@ html(lang="en")
     <![endif]-->
 
   body
+    include common/preloader
     block content
